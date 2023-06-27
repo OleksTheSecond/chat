@@ -1,8 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class NewMessage extends StatefulWidget {
   const NewMessage(this.speakingUserId);
@@ -14,8 +12,8 @@ class NewMessage extends StatefulWidget {
 
 class _NewMessageState extends State<NewMessage> {
   var _enteredMessage = '';
-  final _controller = new TextEditingController();
-  // 'lampard' : true
+  final _controller = TextEditingController();
+
   void _sendMessage() async {
     FocusScope.of(context).unfocus();
     final user = FirebaseAuth.instance.currentUser;
@@ -44,7 +42,8 @@ class _NewMessageState extends State<NewMessage> {
         Expanded(
           child: TextField(
             controller: _controller,
-            decoration: InputDecoration(labelText: 'Відправте повідомлення...'),
+            decoration:
+                const InputDecoration(labelText: 'Відправте повідомлення...'),
             onChanged: (value) {
               setState(() {
                 _enteredMessage = value;
@@ -54,7 +53,7 @@ class _NewMessageState extends State<NewMessage> {
         ),
         IconButton(
           onPressed: _enteredMessage.trim().isEmpty ? null : _sendMessage,
-          icon: Icon(Icons.send),
+          icon: const Icon(Icons.send),
           color: Theme.of(context).colorScheme.primary,
         )
       ]),
