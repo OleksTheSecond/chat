@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "386215297454",
+    "project_id": "chat-lab-f0e5b",
+    "storage_bucket": "chat-lab-f0e5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386215297454:android:9ccaff0dff54c6179b483f",
+        "android_client_info": {
+          "package_name": "com.my.chat_lab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "386215297454-1ckb0v9i3imkcamefloraq621pt6qup8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ3TLtO_9WqZ1nj3lVn5BiG0JRSygmvVs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "386215297454-1ckb0v9i3imkcamefloraq621pt6qup8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
