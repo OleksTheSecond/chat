@@ -12,8 +12,6 @@ class ChatScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final firebasPath = "chats/z3Q25OkanlFzkHMXMfcD/messages";
-
     return Scaffold(
       appBar: AppBar(
         title: const Text('SomeChat'),
