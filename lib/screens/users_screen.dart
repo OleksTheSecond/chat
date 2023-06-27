@@ -2,8 +2,6 @@ import 'package:chat_lab/screens/chat_screen.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 
 class UsersSreen extends StatelessWidget {
   const UsersSreen({super.key});
